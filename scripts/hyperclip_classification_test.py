@@ -1,25 +1,22 @@
 import argparse
-from functools import partial
 import json
 import os
-from copy import deepcopy
+from functools import partial
 
-import model.custom_hnet as custom_hnet
 import numpy as np
 import torch
 import wandb
-from data.dataloader.clip_vqa import CLIP_VQA
 from features.image_features import load_image_features
 from features.ques_features import load_ques_features
 from features.text_features import load_text_features
 from model.hyperclip import build_hyperclip_from_classic_clip
-from torch.utils.data import DataLoader
 from tqdm import tqdm
 from training.store_few_shot_latent import StoreFewShotLatent
 from training.vae_learn import sample_from_enc
 from utils import clip_utils
 from utils.build_opt import build_optimizer
-from utils.init_utils import load_metamodel_from_checkpoint, load_vae_and_metamodel_from_checkpoint
+from utils.init_utils import (load_metamodel_from_checkpoint,
+                              load_vae_and_metamodel_from_checkpoint)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--wandb_mode', type=str, default='online', help='Set to "disabled" to disable Weights & Biases logging')
