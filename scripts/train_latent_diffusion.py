@@ -248,6 +248,7 @@ def main(args):
         # Eval epochs
         if config["eval"] or (meta_epoch+1) % config["val_epoch_interval"] == 0:
 
+            n_shot_trial_dict = {}
             if "n_shot_trials_maxN" in config and config["n_shot_trials_maxN"] is not None:
                 n_shot_trial_dict = {"epoch": meta_epoch}
 
