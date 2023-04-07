@@ -1,8 +1,8 @@
-# Meta-Learning via Classifier(-free) Guidance
+# Meta-Learning via Classifier(-free) Diffusion Guidance
 
 [arxiv](https://arxiv.org/abs/2210.08942) | [BibTeX](#citation)
 
-**Meta-Learning via Classifier(-free) Guidance**<br/>
+**Meta-Learning via Classifier(-free) Diffusion Guidance**<br/>
 [Elvis Nava](https://github.com/elvisnava)\*,
 [Seijin Kobayashi](https://github.com/seijin-kobayashi)\*,
 Yifei Yin,
@@ -68,7 +68,7 @@ python scripts/train_latent_diffusion.py (--precompute_checkpoint <wandb id of p
 # Citation
 ```
 @misc{nava_meta-learning_2022,
-	title = {Meta-{Learning} via {Classifier}(-free) {Guidance}},
+	title = {Meta-{Learning} via {Classifier}(-free) {Diffusion} {Guidance}},
 	url = {http://arxiv.org/abs/2210.08942},
 	doi = {10.48550/arXiv.2210.08942},
 	publisher = {arXiv},
@@ -76,7 +76,7 @@ python scripts/train_latent_diffusion.py (--precompute_checkpoint <wandb id of p
 	month = oct,
 	year = {2022},
 	note = {arXiv:2210.08942 [cs]},
-	keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+	keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences},
     copyright = {arXiv.org perpetual, non-exclusive license}
 }
 ```
